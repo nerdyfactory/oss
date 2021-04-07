@@ -10,6 +10,7 @@
 // The color of the SVG loader should be modified manually.
 // See assets/svg/components/circle-preloader.svg
 $header-navbar-brand-width: 2.5rem;
+$header-navbar-brand-mobile-width: $header-navbar-brand-width;
 $brand-max-width: 5rem;
 $theme-colors: (
   "primary": #093377,

@@ -14442,7 +14442,7 @@ button:focus {
   }
   .navbar-expand-sm .navbar-brand,
   .navbar-expand-sm .navbar-brand > img {
-    width: 7rem;
+    width: 2.5rem;
   }
   .navbar-expand-sm .navbar-nav {
     margin-top: 1rem;
@@ -14510,7 +14510,7 @@ button:focus {
   }
   .navbar-expand-md .navbar-brand,
   .navbar-expand-md .navbar-brand > img {
-    width: 7rem;
+    width: 2.5rem;
   }
   .navbar-expand-md .navbar-nav {
     margin-top: 1rem;
@@ -14578,7 +14578,7 @@ button:focus {
   }
   .navbar-expand-lg .navbar-brand,
   .navbar-expand-lg .navbar-brand > img {
-    width: 7rem;
+    width: 2.5rem;
   }
   .navbar-expand-lg .navbar-nav {
     margin-top: 1rem;
@@ -14646,7 +14646,7 @@ button:focus {
   }
   .navbar-expand-xl .navbar-brand,
   .navbar-expand-xl .navbar-brand > img {
-    width: 7rem;
+    width: 2.5rem;
   }
   .navbar-expand-xl .navbar-nav {
     margin-top: 1rem;
@@ -14714,7 +14714,7 @@ button:focus {
 
 .navbar-expand .navbar-brand,
 .navbar-expand .navbar-brand > img {
-  width: 7rem;
+  width: 2.5rem;
 }
 
 .navbar-expand .navbar-nav {

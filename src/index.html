@@ -50,11 +50,10 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
       @@include("@@autopath/includes/hero.html")
-      @@include("@@autopath/includes/features.html")
-      @@include("@@autopath/includes/cta.html")
+      @@include("@@autopath/includes/highlights.html")
+      @@include("@@autopath/includes/service.html")
       @@include("@@autopath/includes/learn.html")
-      @@include("@@autopath/includes/testimonials.html")
-      @@include("@@autopath/includes/clients.html")
+      @@include("@@autopath/includes/cta.html")
       @@include("@@autopath/includes/pricing.html")
       @@include("@@autopath/includes/signup.html")
     </main>
@@ -85,6 +84,7 @@
     <script src="@@autopath/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="@@autopath/assets/vendor/slick-carousel/slick/slick.js"></script>
     <script src="@@autopath/node_modules/aos/dist/aos.js"></script>
+    <script src="@@autopath/assets/vendor/hs-toggle-switch/dist/hs-toggle-switch.min.js"></script>
 
     <!-- JS Front -->
     <!-- bundlejs:theme [@@autopath] -->
@@ -167,6 +167,11 @@
         // =======================================================
         $(".js-go-to").each(function () {
           var goTo = new HSGoTo($(this)).init();
+        });
+        // INITIALIZATION OF TOGGLE SWITCH
+        // =======================================================
+        $(".js-toggle-switch").each(function () {
+          var toggleSwitch = new HSToggleSwitch($(this)).init();
         });
       });
     </script>
