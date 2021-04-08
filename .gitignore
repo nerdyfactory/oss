@@ -3,3 +3,5 @@ build/
 
 src/.tmp/
 .DS_Store
+
+.firebase/
