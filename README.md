@@ -1,27 +1,20 @@
-# Welcome to Front – Multipurpose Responsive Template! #
+# OSS(OffShoring Service) landing page
 
 Front Template by Htmlstream
 
-### Documentation and Getting Started ###
+Below is quick steps to run dev Server:
 
-The overall development documentation is available at `documentation/index.html` and Gulp documentation at `documentation/getting-started/gulp.html`.
-
-Below is quick steps to run Gulp:
-
-- npm install --global gulp-cli
-- npm install
-- gulp
+```
+$ yarn install
+$ yarn start
+```
 
 Yup, that's it.
 
-### License ###
+And for production build, you can run
 
-Front is licensed under Bootstrap Themes and you can find more detailed information about it here: https://themes.getbootstrap.com/licenses
+```
+$ yarn build
+```
 
-### Theme Support ###
-
-Have a question? No worries! Front comes with 6 months of free support. We take seriously every issue that is reported to us, and we aim to resolve each one as quickly as possible. Feel free to “Contact Us” at https://htmlstream.com/contact-us
-
-### Need Front Template customization? ###
-
-We offer affordable, professional and trendy customized design solutions, solely for your own projects! Front Template can be easily customized with its cutting-edge components and features. However, if you feel you need any further customization please drop us a message at https://htmlstream.com/hire-us and our dedicated team will assist you with your inquiries.
+The generated production build will be under `build/` directory
