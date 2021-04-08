@@ -60,26 +60,24 @@
                 <a class="nav-link" href="#homeSection">홈</a>
               </li>
               <li class="navbar-nav-item">
-                <a class="nav-link" href="#highlightsSection">하이라이트</a>
-              </li>
-              <li class="navbar-nav-item">
                 <a class="nav-link" href="#serviceSection">서비스</a>
               </li>
               <li class="navbar-nav-item">
-                <a class="nav-link" href="#learnSection">스프린트</a>
+                <a class="nav-link" href="#highlightsSection">하이라이트</a>
+              </li>
+              <li class="navbar-nav-item">
+                <a class="nav-link" href="#sprintSection">스프린트</a>
               </li>
               <li class="navbar-nav-item">
                 <a class="nav-link" href="#pricingSection">비용</a>
               </li>
-              <li class="navbar-nav-item">
-                <a class="nav-link" href="#hireUsSection">연락하기</a>
-              </li>
               <li class="header-nav-last-item ml-lg-2">
                 <a
                   class="btn btn-primary btn-sm btn-pill transition-3d-hover"
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jonghun-yu/15min'});return false;"
-                  >미팅 예약</a
+                  onclick="openCalendly()"
                 >
+                  시작하기
+                </a>
               </li>
             </ul>
           </div>
@@ -89,15 +87,4 @@
       <!-- End Nav -->
     </div>
   </div>
-  <!-- Calendly link widget begin -->
-  <link
-    href="https://assets.calendly.com/assets/external/widget.css"
-    rel="stylesheet"
-  />
-  <script
-    src="https://assets.calendly.com/assets/external/widget.js"
-    type="text/javascript"
-    async
-  ></script>
-  <!-- Calendly link widget end -->
 </header>

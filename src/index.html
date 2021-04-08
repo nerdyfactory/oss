@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>Onepage SaaS | Front - Responsive Website Template</title>
+    <title>무료로 1주동안 해외개발자를 고용해보세요. | 너디팩토리</title>
 
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8" />
@@ -50,12 +50,11 @@
     <!-- ========== MAIN CONTENT ========== -->
     <main id="content" role="main">
       @@include("@@autopath/includes/hero.html")
-      @@include("@@autopath/includes/highlights.html")
       @@include("@@autopath/includes/service.html")
-      @@include("@@autopath/includes/learn.html")
+      @@include("@@autopath/includes/highlights.html")
       @@include("@@autopath/includes/cta.html")
+      @@include("@@autopath/includes/sprint.html")
       @@include("@@autopath/includes/pricing.html")
-      @@include("@@autopath/includes/signup.html")
     </main>
     <!-- ========== END MAIN CONTENT ========== -->
 
@@ -91,6 +90,18 @@
     <script src="@@autopath/assets/js/hs.core.js"></script>
     <script src="@@autopath/assets/js/hs.fancybox.js"></script>
     <script src="@@autopath/assets/js/hs.slick-carousel.js"></script>
+
+    <!-- Calendly link widget begin -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+      async
+    ></script>
+    <!-- Calendly link widget end -->
 
     <!-- JS Plugins Init. -->
     <script>
@@ -174,6 +185,13 @@
           var toggleSwitch = new HSToggleSwitch($(this)).init();
         });
       });
+      function openCalendly() {
+        console.log("aaaaaaaa");
+        Calendly.initPopupWidget({
+          url: "https://calendly.com/jonghun-yu/15min",
+        });
+        return false;
+      }
     </script>
 
     <!-- IE Support -->

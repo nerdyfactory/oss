@@ -3,14 +3,13 @@
   <div class="container pb-4">
     <!-- Title -->
     <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
-      <h2 class="h1">Flexible and transparent pricing</h2>
-      <p>Whatever your status, our offers evolve according to your needs.</p>
+      <h2 class="h1">서비스 비용</h2>
     </div>
     <!-- End Title -->
 
     <!-- Toggle Switch -->
     <div class="d-flex justify-content-center align-items-center mb-11">
-      <span class="font-size-1 text-muted">Monthly</span>
+      <span class="font-size-1 text-muted">월간</span>
       <label class="toggle-switch mx-2" for="customSwitchExample1">
         <input
           type="checkbox"
@@ -25,7 +24,7 @@
         </span>
       </label>
       <div class="position-relative">
-        <span class="font-size-1 text-muted">Annual</span>
+        <span class="font-size-1 text-muted">연간</span>
 
         <!-- Arrow -->
         <figure class="position-absolute top-0 text-nowrap mt-n5 ml-3 ml-md-7">
@@ -54,9 +53,9 @@
               d="M11,54.3c0,0,10.3-65.2,86.3-50"
             />
           </svg>
-          <span class="badge badge-primary badge-pill py-sm-2 px-sm-3"
-            >Save up to 10%</span
-          >
+          <span class="badge badge-primary badge-pill py-sm-2 px-sm-3">
+            10% 할인
+          </span>
         </figure>
         <!-- End Arrow -->
       </div>
@@ -68,22 +67,22 @@
         <!-- Pricing -->
         <div class="card shadow-none h-100">
           <!-- Header -->
-          <div class="card-header border-0 text-center">
-            <span class="d-block h3 mb-0">Starter</span>
-            <span class="d-block">
-              <span class="font-size-4 text-primary font-weight-bold">
-                <span class="mr-n2">$</span>
-                <span
-                  id="pricingCount1Example1"
-                  data-hs-toggle-switch-item-options='{
-                         "min": 22,
-                         "max": 12
-                       }'
-                  >22</span
-                >
+          <div class="card-header border-0">
+            <div class="d-block container-fluid">
+              <span class="d-block h3 mb-0">Junior</span>
+              <span class="d-block float-right">
+                <span class="font-size-4 text-primary font-weight-bold">
+                  <span
+                    id="pricingCount1Example1"
+                    data-hs-toggle-switch-item-options='{ "min": 200, "max": 180 }'
+                  >
+                    200
+                  </span>
+                  <span class="mr-n2">만원</span>
+                </span>
+                <span class="font-size-1">/ 월</span>
               </span>
-              <span class="font-size-1">/ mon</span>
-            </span>
+            </div>
           </div>
           <!-- End Header -->
 
@@ -91,19 +90,15 @@
           <div class="card-body">
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">1 User</div>
+              <div class="media-body">1~3년 경력</div>
             </div>
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">Front plan features</div>
+              <div class="media-body">단위업무 진행 가능</div>
             </div>
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">1 app</div>
-            </div>
-            <div class="media font-size-1 text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">Integrations</div>
+              <div class="media-body">4대보험, 퇴직금 필요없음</div>
             </div>
           </div>
           <!-- End Body -->
@@ -112,8 +107,9 @@
             <button
               type="button"
               class="btn btn-soft-primary btn-block transition-3d-hover"
+              onclick="openCalendly()"
             >
-              Get Started
+              시작하기
             </button>
           </div>
         </div>
@@ -125,22 +121,22 @@
         <div class="position-relative">
           <div class="card shadow-lg h-100">
             <!-- Header -->
-            <div class="card-header border-0 text-center">
-              <span class="d-block h3 mb-0">Pro</span>
-              <span class="d-block">
-                <span class="font-size-4 text-primary font-weight-bold">
-                  <span class="mr-n2">$</span>
-                  <span
-                    id="pricingCount2Example1"
-                    data-hs-toggle-switch-item-options='{
-                           "min": 44,
-                           "max": 34
-                         }'
-                    >44</span
-                  >
+            <div class="card-header border-0">
+              <div class="d-block container-fluid">
+                <span class="d-block h3 mb-0">Middle</span>
+                <span class="d-block float-right">
+                  <span class="font-size-4 text-primary font-weight-bold">
+                    <span
+                      id="pricingCount1Example1"
+                      data-hs-toggle-switch-item-options='{ "min": 300, "max": 270 }'
+                    >
+                      300
+                    </span>
+                    <span class="mr-n2">만원</span>
+                  </span>
+                  <span class="font-size-1">/ 월</span>
                 </span>
-                <span class="font-size-1">/ mon</span>
-              </span>
+              </div>
             </div>
             <!-- End Header -->
 
@@ -148,23 +144,15 @@
             <div class="card-body">
               <div class="media font-size-1 mb-3">
                 <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">3 User</div>
+                <div class="media-body">3~6년 경력</div>
               </div>
               <div class="media font-size-1 mb-3">
                 <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">Front plan features</div>
+                <div class="media-body">대부분의 업무 진행가능</div>
               </div>
-              <div class="media font-size-1 mb-3">
+              <div class="media font-size-1 text-body mb-3">
                 <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">3 apps</div>
-              </div>
-              <div class="media font-size-1 mb-3">
-                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">Integrations</div>
-              </div>
-              <div class="media font-size-1 mb-3">
-                <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-                <div class="media-body">Product Support</div>
+                <div class="media-body">4대보험, 퇴직금 필요없음</div>
               </div>
             </div>
             <!-- End Body -->
@@ -173,8 +161,9 @@
               <button
                 type="button"
                 class="btn btn-soft-primary btn-block transition-3d-hover"
+                onclick="openCalendly()"
               >
-                Get Started
+                시작하기
               </button>
             </div>
           </div>
@@ -217,22 +206,16 @@
         <!-- Pricing -->
         <div class="card shadow-none h-100">
           <!-- Header -->
-          <div class="card-header border-0 text-center">
-            <span class="d-block h3 mb-0">Enterprise</span>
-            <span class="d-block">
-              <span class="font-size-4 text-primary font-weight-bold">
-                <span class="mr-n2">$</span>
-                <span
-                  id="pricingCount3Example1"
-                  data-hs-toggle-switch-item-options='{
-                         "min": 69,
-                         "max": 59
-                       }'
-                  >69</span
-                >
+          <div class="card-header border-0">
+            <div class="d-block container-fluid">
+              <span class="d-block h3 mb-0">Senior</span>
+              <span class="d-block float-right">
+                <span class="font-size-4 text-primary font-weight-bold">
+                  <span class="mr-n2">협의</span>
+                </span>
+                <span class="font-size-1">/ 월</span>
               </span>
-              <span class="font-size-1">/ mon</span>
-            </span>
+            </div>
           </div>
           <!-- End Header -->
 
@@ -240,23 +223,15 @@
           <div class="card-body">
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">5 User</div>
+              <div class="media-body">6년 이상</div>
             </div>
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">Front plan features</div>
+              <div class="media-body">대부분의 업무를 능숙하게 진행</div>
             </div>
             <div class="media font-size-1 text-body mb-3">
               <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">All apps</div>
-            </div>
-            <div class="media font-size-1 text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">Integrations</div>
-            </div>
-            <div class="media font-size-1 text-body mb-3">
-              <i class="fas fa-check-circle text-success mt-1 mr-2"></i>
-              <div class="media-body">Product Support</div>
+              <div class="media-body">4대보험, 퇴직금 필요없음</div>
             </div>
           </div>
           <!-- End Body -->
@@ -265,8 +240,9 @@
             <button
               type="button"
               class="btn btn-soft-primary btn-block transition-3d-hover"
+              onclick="openCalendly()"
             >
-              Get Started
+              시작하기
             </button>
           </div>
         </div>
