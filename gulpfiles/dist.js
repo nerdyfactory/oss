@@ -200,12 +200,6 @@ function copyDependencies() {
   });
 }
 
-function copyFavicon() {
-  return gulp
-    .src(paths.src.base.dir + "/favicon.ico")
-    .pipe(gulp.dest(paths.dist.base.dir));
-}
-
 function scss() {
   return gulp
     .src(paths.src.scss.files)
@@ -230,4 +224,4 @@ function clean() {
   return del(paths.dist.base.dir, {force: true});
 }
 
-gulp.task('dist', gulp.series(clean, fileInclude, scss, minCSS, minJS, svgCompiler, copy, copyNode, copySkipedFiles, copyDependencies, copyFavicon));
+gulp.task('dist', gulp.series(clean, fileInclude, scss, minCSS, minJS, svgCompiler, copy, copyNode, copySkipedFiles, copyDependencies));

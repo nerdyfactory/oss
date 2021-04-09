@@ -329,14 +329,8 @@ function copyDependencies() {
   });
 }
 
-function copyFavicon() {
-  return gulp
-    .src(paths.src.base.dir + "/favicon.ico")
-    .pipe(gulp.dest(paths.preview.base.dir));
-}
-
 function clean() {
   return del(paths.preview.base.dir, {force: true});
 }
 
-gulp.task('preview', gulp.series(clean, fileInclude, buildCSS, buildVendorCSS, buildJS, buildVendorJS, svgCompiler, copeImages, copySkippedFiles, copySkippedNodeFiles, copyDependencies, copyFavicon));
+gulp.task('preview', gulp.series(clean, fileInclude, buildCSS, buildVendorCSS, buildJS, buildVendorJS, svgCompiler, copeImages, copySkippedFiles, copySkippedNodeFiles, copyDependencies));

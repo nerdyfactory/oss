@@ -75,7 +75,8 @@ module.exports = {
       "*assets/video/working-in-office.mp4": "",
       "*assets/ajax/autocomplete-data-for-documentation-search.json": "",
       "*assets/ajax/autocomplete-data-for-snippets-search.json": "",
-      "*assets/img/750x600/*": ""
+      "*assets/img/750x600/*": "",
+      "*assets/favicon/*": ""
     }
   },
 
